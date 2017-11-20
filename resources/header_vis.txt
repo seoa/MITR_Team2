@@ -1,0 +1,27 @@
+<style>
+  #container {
+  }
+  #logo {
+    margin: 0 auto;
+    display:inline-block;
+  }
+  #nav {
+    height: 3em;
+    background-color: grey;
+  }
+  #nav a{
+    font-size: 2em;
+    height:3em;
+    margin: 0 .5em;
+    padding: 0 .5em;
+    color: white;
+  }
+  #nav a:hover{
+    background-color: #2d5fcb;
+  }
+</style>
+
+<div id="container">
+  <img id="logo" src="../plugins/html_vis/images/rmt.png"></img>
+  <div id="nav"><a>Home</a><a>2014</a><a>2015</a><a>2016</a></div>
+</div>
