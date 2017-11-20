@@ -1,7 +1,11 @@
 In order to set up the dashboard, follow these steps:
 
+Download Kibana: https://www.elastic.co/downloads/kibana
+Download Elasticsearch: https://www.elastic.co/downloads/elasticsearch
+Download Excelastic (.jar file): https://github.com/codingchili/parser-excel-elasticsearch/releases
+
 Technical Setup: Excel
-1.	Download Kibana and Elasticsearch get links
+1.	Download Kibana and Elasticsearch 
 2.	Download Excelastic
 3.	Open a Command Prompt
 4.	Change directory to where Kibana and Elasticsearch is located
