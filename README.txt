@@ -2,6 +2,7 @@ In order to set up the dashboard, follow these steps:
 
 Download Kibana: https://www.elastic.co/downloads/kibana
 Download Elasticsearch: https://www.elastic.co/downloads/elasticsearch
+Logstash: https://www.elastic.co/downloads/logstash 
 Download Excelastic (.jar file): https://github.com/codingchili/parser-excel-elasticsearch/releases
 
 Technical Setup: Excel
@@ -38,6 +39,11 @@ Technical Setup: Importing Dashboard and Visualizations
 2.	Select “Management” on  the left menu
 3.	Press “Saved Objects”
 4.	Press “Import” on the upper right
-5.	Locate the export.json file
+5.	Locate the exported files
 6.	Import saved objects
 
+Custom Plugin: HTML Visualization
+1. Locate the main Kibana directory
+2. Go to plugins folder
+3. Place html_vis folder in plugins
+4. Kibana will have to re-cache and optimize in order to register the custom plugin. This process may take several minutes

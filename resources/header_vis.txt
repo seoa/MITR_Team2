@@ -1,3 +1,4 @@
+<!--Copy and paste the contents of this file in a new HTML visualization in order to create the dashboard header -->
 <style>
   #container {
   }
