@@ -10,11 +10,11 @@ Technical Setup: Excel
 2.	Download Excelastic
 3.	Open a Command Prompt
 4.	Change directory to where Kibana and Elasticsearch is located
-5.	Go to the Kibana directory and run Kibana ì.\bin\kibanaî
+5.	Go to the Kibana directory and run Kibana ‚Äú.\bin\kibana‚Äù
 6.	Open another Command Prompt and go to the Elasticsearch directory
-7.	Run Elasticsearch ì.\bin\elasticsearchî
+7.	Run Elasticsearch ‚Äú.\bin\elasticsearch‚Äù
 8.	Open another Command Prompt and locate the Excelastic .jar file
-9.	Run Excelastic ìjava -jar excelastic_jar_fileî
+9.	Run Excelastic ‚Äújava -jar excelastic_jar_file‚Äù
 10.	Use Excelastic to import the desired excel file into elasticsearch
 11.	Access Kibana via port 5601 (by default)
 12.	Create the index by specifying the name that was given to Excelastic
@@ -22,23 +22,26 @@ Technical Setup: Excel
 
 Technical Setup: SQL Database
 1.	Download Kibana, Elasticsearch, and Logstash
-2.	Create the Logstash configuration file as specified in section 9 of this document under subtitle ìBackendî
-3.	Place the configuration file in Logstash directory
-4.	Open a Command Prompt
-5.	Change directory to where Kibana and Elasticsearch is located
-6.	Go to the Kibana directory and run Kibana ì.\bin\kibanaî
-7.	Open another Command Prompt and go to the Elasticsearch directory
-8.	Run Elasticsearch ì.\bin\elasticsearchî
-9.	Open another Command Prompt and run the Logstash Configuration file
-10.	Access Kibana via port 5601 (by default)
-11.	Create the index by specifying the name that was given to Excelastic
+2.	Create the Logstash configuration file as specified in section 9 of this document under subtitle ‚ÄúBackend‚Äù
+3.	Place the configuration file in Logstash directory bin
+4.  Make sure the config file matches the file pathways and credientials for your computer, make sure all correct ports are open
+5.  Must download a version of a JDBC driver which will be used in connecting to sql, must put pathway in config file
+6.  Must enter sql command to select the data you want to filter out into the elastic search index, must also name index in config file
+7.	Open a Command Prompt
+8.	Change directory to where Kibana and Elasticsearch is located
+9.	Go to the Kibana directory and run Kibana ‚Äú.\bin\kibana‚Äù
+10.	Open another Command Prompt and go to the Elasticsearch directory
+11.	Run Elasticsearch ‚Äú.\bin\elasticsearch‚Äù
+12.	Open another Command Prompt and run the Logstash Configuration file
+13.	Access Kibana via port 5601 (by default)
+14. Select the elastic search index in kibana 
 
 
 Technical Setup: Importing Dashboard and Visualizations
 1.	Open Kibana
-2.	Select ìManagementî on  the left menu
-3.	Press ìSaved Objectsî
-4.	Press ìImportî on the upper right
+2.	Select ‚ÄúManagement‚Äù on  the left menu
+3.	Press ‚ÄúSaved Objects‚Äù
+4.	Press ‚ÄúImport‚Äù on the upper right
 5.	Locate the exported files
 6.	Import saved objects
 
