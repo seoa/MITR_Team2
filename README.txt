@@ -24,9 +24,9 @@ Technical Setup: SQL Database
 1.	Download Kibana, Elasticsearch, and Logstash
 2.	Create the Logstash configuration file as specified in section 9 of this document under subtitle “Backend”
 3.	Place the configuration file in Logstash directory bin
-4.  Make sure the config file matches the file pathways and credientials for your computer, make sure all correct ports are open
-5.  Must download a version of a JDBC driver which will be used in connecting to sql, must put pathway in config file
-6.  Must enter sql command to select the data you want to filter out into the elastic search index, must also name index in config file
+4.    Make sure the config file matches the file pathways and credientials for your computer, make sure all correct ports are open
+5.    Must download a version of a JDBC driver which will be used in connecting to sql, must put pathway in config file
+6.    Must enter sql command to select the data you want to filter out into the elastic search index, must also name index in config file
 7.	Open a Command Prompt
 8.	Change directory to where Kibana and Elasticsearch is located
 9.	Go to the Kibana directory and run Kibana “.\bin\kibana”
@@ -34,7 +34,7 @@ Technical Setup: SQL Database
 11.	Run Elasticsearch “.\bin\elasticsearch”
 12.	Open another Command Prompt and run the Logstash Configuration file
 13.	Access Kibana via port 5601 (by default)
-14. Select the elastic search index in kibana 
+14.   Select the elastic search index in kibana 
 
 
 Technical Setup: Importing Dashboard and Visualizations
