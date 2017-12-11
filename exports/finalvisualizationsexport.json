@@ -1,0 +1,142 @@
+[
+  {
+    "_id": "AV_xB0aaWRZn8f2gjY2-",
+    "_type": "visualization",
+    "_source": {
+      "title": "Total RX DATA Over Time",
+      "visState": "{\"title\":\"Total RX DATA Over Time\",\"type\":\"histogram\",\"params\":{\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{\"text\":\"rxdate per month\"}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"area\",\"mode\":\"normal\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true,\"interpolate\":\"linear\"},{\"show\":true,\"mode\":\"normal\",\"type\":\"line\",\"drawLinesBetweenPoints\":true,\"showCircles\":true,\"data\":{\"id\":\"3\",\"label\":\"Moving Avrg\"},\"valueAxis\":\"ValueAxis-1\"}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false,\"type\":\"line\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Count\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"rxdate\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":0,\"extended_bounds\":{}}},{\"id\":\"3\",\"enabled\":true,\"type\":\"moving_avg\",\"schema\":\"metric\",\"params\":{\"customMetric\":{\"id\":\"3-metric\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metricAgg\",\"params\":{}},\"metricAgg\":\"custom\",\"customLabel\":\"Moving Avrg\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"Moving Avrg\":\"#BF1B00\",\"Count\":\"#70DBED\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV_xAn2RWRZn8f2gjY28\",\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AV_xM6AmWRZn8f2gjY3F",
+    "_type": "visualization",
+    "_source": {
+      "title": "AGE Groupings with BMI HISTOGRAM",
+      "visState": "{\"title\":\"AGE Groupings with BMI HISTOGRAM\",\"type\":\"histogram\",\"params\":{\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{\"text\":\"patientage\"}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"normal\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false,\"type\":\"histogram\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Count\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"patientage\",\"interval\":10,\"extended_bounds\":{}}},{\"id\":\"3\",\"enabled\":true,\"type\":\"range\",\"schema\":\"group\",\"params\":{\"field\":\"patientbmi\",\"ranges\":[{\"from\":17,\"to\":20},{\"from\":21,\"to\":24},{\"from\":25,\"to\":28},{\"from\":29,\"to\":32},{\"from\":33,\"to\":100}]}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"21 to 24\":\"#EF843C\",\"17 to 20\":\"#6ED0E0\",\"25 to 28\":\"#E24D42\",\"29 to 32\":\"#1F78C1\",\"33 to 100\":\"#BA43A9\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV_w1SiJWRZn8f2giNcb\",\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AWAoOx3KyM1Tza0ySNZa",
+    "_type": "visualization",
+    "_source": {
+      "title": "menu",
+      "visState": "{\"title\":\"menu\",\"type\":\"HTML\",\"params\":{\"html\":\"<body>\\n<div  align=\\\"center\\\" id=\\\"container\\\">\\n<link href='http://fonts.googleapis.com/css?family=Ubuntu:bold' rel='stylesheet' type='text/css'>\\n  <img src=\\\"\\\">\\n<h1>RoadMap</h1><h1> Technologies</h1>\\n<div align=\\\"center\\\">\\n  <button id=\\\"b1\\\" class=\\\"button\\\"><a href=\\\"/app/kibana#/dashboard/AWAoQow9yM1Tza0ySNZc\\\"><span>Patient Data</span></a></button><button id=\\\"b2\\\" class=\\\"button\\\"><a href=\\\"/app/kibana#/dashboard/AWAsm6-Ty5b5LMs6FydK\\\"><span>RX Data</span></a></button></div></div>\\n</body>\\n<style>\\n  #container {\\n     margin:0 auto;\\n  }\\n  #logo {\\n    margin: 0 auto;\\n    display:inline-block;\\n   }\\n  #nav {\\n    height: 3em;\\n    background-color: grey;\\n  }\\n  #nav a{\\n    font-size: 2em;\\n    height:3em;\\n    margin: 0 .5em;\\n    padding: 0 .5em;\\n    color: white;\\n   \\n  }\\n  #nav a:hover{\\n    background-color: red;\\n  }\\nh1{\\nfont-family: 'Ubuntu', Helvetica, Arial, sans-serif;\\nfont-size: 40px;\\n  transform: skewY(-1deg);\\n  letter-spacing: 1px;\\n  word-spacing: 2px;\\n  color: #0000FF;\\n text-align:center;\\n  text-shadow: \\n    -1px -1px 0 #0000CC,\\n    -2px -2px 0 #000099,\\n    -3px -3px 0 #000066,\\n    -4px -4px 0 #000033,\\n    -5px -5px 0 #000000,\\n    \\n}\\n#b1 {\\n  display: inline-block;\\n  border-radius: 2px;\\n  background-color: #0000FF;\\n  border: none;\\n  text-align: center;\\n  font-size: 15px;\\n  padding: 15px;\\n  width: 150px;\\n  transition: all 0.5s;\\n  cursor: pointer;\\n  margin: 5px;\\n  font-weight: 600;\\n  font-family: 'Oswald', Helvetica, sans-serif;\\n  color: #FFFFFF;\\n}\\n#b2 {\\n  display: inline-block;\\n  border-radius: 2px;\\n  background-color: #0000FF;\\n  border: none;\\n  text-align: center;\\n  font-size: 15px;\\n  padding: 15px;\\n  width: 150px;\\n  transition: all 0.5s;\\n  cursor: pointer;\\n  margin: 5px;\\n  font-weight: 600;\\n  font-family: 'Oswald', Helvetica, sans-serif;\\n  color: #FFFFFF;\\n}\\n\\n#b1 span {\\n  cursor: pointer;\\n  display: inline-block;\\n  position: relative;\\n  transition: 0.4s;\\n color: #FFFFFF;\\n}\\n#b2 span {\\n  cursor: pointer;\\n  display: inline-block;\\n  position: relative;\\n  transition: 0.4s;\\n color: #FFFFFF;\\n}\\n\\n#b1 span:after {\\n  content: '\\\\2608';\\n  position: absolute;\\n  opacity: 0;\\n  top: 0;\\n  right: -20px;\\n  transition: 0.4s;\\n}\\n#b2 span:after {\\n  content: '\\\\2608';\\n  position: absolute;\\n  opacity: 0;\\n  top: 0;\\n  right: -20px;\\n  transition: 0.4s;\\n}\\n\\n#b1:hover span {\\n  padding-right: 25px;\\n}\\n#b2:hover span {\\n  padding-right: 25px;\\n}\\n\\n#b1:hover span:after {\\n  opacity: 1;\\n  right: 0;\\n}\\n#b2:hover span:after {\\n  opacity: 1;\\n  right: 0;\\n}\\n.button:hover {\\nbox-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);\\n}\\n\\n\\n</style>\",\"type\":\"HTML\"},\"aggs\":[],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AV_xDhDyWRZn8f2gjY3A",
+    "_type": "visualization",
+    "_source": {
+      "title": "National HeatMap",
+      "visState": "{\"title\":\"National HeatMap\",\"type\":\"tile_map\",\"params\":{\"mapType\":\"Scaled Circle Markers\",\"isDesaturated\":true,\"addTooltip\":true,\"heatMaxZoom\":0,\"heatMinOpacity\":0.1,\"heatRadius\":\"14\",\"heatBlur\":\"9\",\"legendPosition\":\"bottomright\",\"mapZoom\":2,\"mapCenter\":[0,0],\"wms\":{\"enabled\":false,\"url\":\"https://basemap.nationalmap.gov/arcgis/services/USGSTopo/MapServer/WMSServer\",\"options\":{\"version\":\"1.3.0\",\"layers\":\"0\",\"format\":\"image/png\",\"transparent\":true,\"attribution\":\"Maps provided by USGS\",\"styles\":\"\"}},\"type\":\"tile_map\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Patients\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"geohash_grid\",\"schema\":\"segment\",\"params\":{\"field\":\"location\",\"autoPrecision\":false,\"useGeocentroid\":true,\"precision\":4,\"customLabel\":\"Location\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"mapZoom\":5,\"mapCenter\":[41.934976500546604,-96.04248046875]}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV_w1SiJWRZn8f2giNcb\",\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AWAyQgtny5b5LMs6Fyde",
+    "_type": "visualization",
+    "_source": {
+      "title": "Total Patients",
+      "visState": "{\"title\":\"Total Patients\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"gauge\",\"gauge\":{\"verticalSplit\":true,\"autoExtend\":false,\"percentageMode\":false,\"gaugeType\":\"Metric\",\"gaugeStyle\":\"Full\",\"backStyle\":\"Full\",\"orientation\":\"vertical\",\"colorSchema\":\"Green to Red\",\"gaugeColorMode\":\"None\",\"useRange\":false,\"colorsRange\":[{\"from\":0,\"to\":100}],\"invertColors\":false,\"labels\":{\"show\":true,\"color\":\"black\"},\"scale\":{\"show\":false,\"labels\":false,\"color\":\"#333\",\"width\":2},\"type\":\"simple\",\"style\":{\"fontSize\":60,\"bgColor\":false,\"labelColor\":false,\"subText\":\"\"}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Number of Patients\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV_w1SiJWRZn8f2giNcb\",\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AWAySJgjy5b5LMs6Fydf",
+    "_type": "visualization",
+    "_source": {
+      "title": "Total Prescriptions Filled",
+      "visState": "{\"title\":\"Total Prescriptions Filled\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"gauge\",\"gauge\":{\"verticalSplit\":false,\"autoExtend\":false,\"percentageMode\":false,\"gaugeType\":\"Metric\",\"gaugeStyle\":\"Full\",\"backStyle\":\"Full\",\"orientation\":\"vertical\",\"colorSchema\":\"Green to Red\",\"gaugeColorMode\":\"None\",\"useRange\":false,\"colorsRange\":[{\"from\":0,\"to\":100}],\"invertColors\":false,\"labels\":{\"show\":true,\"color\":\"black\"},\"scale\":{\"show\":false,\"labels\":false,\"color\":\"#333\",\"width\":2},\"type\":\"simple\",\"style\":{\"fontSize\":60,\"bgColor\":false,\"labelColor\":false,\"subText\":\"\"}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# of Prescriptions Filled\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV_xAn2RWRZn8f2gjY28\",\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AWAoWSV1yM1Tza0ySNZe",
+    "_type": "visualization",
+    "_source": {
+      "title": "Specialty Pharmacy Ranking By Prescription (Rx) Filled",
+      "visState": "{\"title\":\"Specialty Pharmacy Ranking By Prescription (Rx) Filled\",\"type\":\"histogram\",\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"labels\":{\"show\":true,\"truncate\":100},\"position\":\"bottom\",\"scale\":{\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"specpharm: Descending\"},\"type\":\"category\"}],\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"legendPosition\":\"right\",\"seriesParams\":[{\"data\":{\"id\":\"1\",\"label\":\"Count\"},\"drawLinesBetweenPoints\":true,\"mode\":\"stacked\",\"show\":\"true\",\"showCircles\":true,\"type\":\"histogram\",\"valueAxis\":\"ValueAxis-1\"}],\"times\":[],\"type\":\"histogram\",\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"labels\":{\"filter\":false,\"rotate\":0,\"show\":true,\"truncate\":100},\"name\":\"LeftAxis-1\",\"position\":\"left\",\"scale\":{\"mode\":\"normal\",\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"Count\"},\"type\":\"value\"}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"specpharm\",\"size\":100,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV_xAn2RWRZn8f2gjY28\",\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AV_SX5BY36PjKZqMHQ0U",
+    "_type": "visualization",
+    "_source": {
+      "title": "ICD9 Codes Year to Year",
+      "visState": "{\"title\":\"ICD9 Codes Year to Year\",\"type\":\"histogram\",\"params\":{\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{\"text\":\"Year\"}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Patients Diagnosed\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"normal\",\"data\":{\"label\":\"Patients Diagnosed\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false,\"type\":\"histogram\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Patients Diagnosed\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"EnrollmentDate\",\"interval\":\"y\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"Year\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"ICD9\",\"size\":5,\"orderAgg\":{\"id\":\"3-orderAgg\",\"enabled\":true,\"type\":\"count\",\"schema\":\"orderAgg\",\"params\":{}},\"order\":\"desc\",\"orderBy\":\"custom\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"555\":\"#E0752D\"},\"legendOpen\":true}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV-6xK1d5qb2A1Yh8ppU\",\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AWAoZG3TyM1Tza0yScmB",
+    "_type": "visualization",
+    "_source": {
+      "title": "Copay amount year to year change",
+      "visState": "{\"title\":\"Copay amount year to year change\",\"type\":\"histogram\",\"params\":{\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{\"text\":\"rxdate per year\"}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false,\"type\":\"histogram\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"rxdate\",\"interval\":\"y\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"copayest\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"5\":\"#EF843C\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV_xAn2RWRZn8f2gjY28\",\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AV_SWeTo36PjKZqMHQ0S",
+    "_type": "visualization",
+    "_source": {
+      "title": "Co-pay year to year",
+      "visState": "{\"title\":\"Co-pay year to year\",\"type\":\"histogram\",\"params\":{\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{\"text\":\"By Year\"}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"# of Co Pays\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"normal\",\"data\":{\"label\":\"# of Co Pays\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false,\"type\":\"histogram\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"# of Co Pays\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"CoPayEst\",\"size\":5,\"orderAgg\":{\"id\":\"2-orderAgg\",\"enabled\":true,\"type\":\"min\",\"schema\":\"orderAgg\",\"params\":{\"field\":\"CoPayEst\"}},\"order\":\"desc\",\"orderBy\":\"custom\",\"customLabel\":\"Type of Copay\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"EnrollmentDate\",\"interval\":\"y\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{},\"customLabel\":\"By Year\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"5\":\"#BA43A9\",\"1,000\":\"#447EBC\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AV-6xK1d5qb2A1Yh8ppU\",\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  }
+]
